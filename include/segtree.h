@@ -9,11 +9,11 @@
 #define MAX 2
 
 template <std::size_t OPERATION>
-class SegTree {
+class segtree {
 public:
   using ll = long long;
 
-  SegTree(std::size_t n) : n_{n}, v_{std::vector<ll>(4 * n + 1, 0)} {
+  segtree(std::size_t n) : n_{n}, v_{std::vector<ll>(4 * n + 1, 0)} {
     static_assert(OPERATION == SUM || OPERATION == MAX);
   }
 

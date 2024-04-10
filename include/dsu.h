@@ -4,9 +4,9 @@
 
 #include <vector>
 
-class DSU {
+class dsu {
   public:
-    DSU(int n) : f_{std::vector<int>(n)}, s_{std::vector<int>(n, 1)} {
+    dsu(int n) : f_{std::vector<int>(n)}, s_{std::vector<int>(n, 1)} {
       for (int i = 0; i < n; i++) {
         f_[i] = i;
       }
