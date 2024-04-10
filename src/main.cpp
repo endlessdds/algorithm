@@ -8,7 +8,7 @@ using ll = long long;
 TEST (segtree_test_sum, single) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
-  SegTree<SUM> t(k);
+  segtree<SUM> t(k);
 
   for (int i = 0; i < k; i++) {
     int rd = std::rand() % 100000;
@@ -30,7 +30,7 @@ TEST (segtree_test_sum, single) {
 TEST (segtree_test_sum, multi) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
-  SegTree<SUM> t(k);
+  segtree<SUM> t(k);
 
   for (int i = 0; i < k; i++) {
     ll rd = std::rand() % 100000;
@@ -59,7 +59,7 @@ TEST (segtree_test_sum, multi) {
 TEST (segtree_test_max, single) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
-  SegTree<MAX> t(k);
+  segtree<MAX> t(k);
 
   for (int i = 0; i < k; i++) {
     int rd = std::rand() % 100000;
@@ -81,7 +81,7 @@ TEST (segtree_test_max, single) {
 TEST (segtree_test_max, multi) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
-  SegTree<MAX> t(k);
+  segtree<MAX> t(k);
 
   for (int i = 0; i < k; i++) {
     ll rd = std::rand() % 100000;
