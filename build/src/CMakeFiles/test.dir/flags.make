@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/dds/code/algorithm/include
+CXX_INCLUDES = -I/home/dds/code/project/algorithm/include
 
 CXX_FLAGS = 
 

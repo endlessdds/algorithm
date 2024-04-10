@@ -1,4 +1,4 @@
-# Install script for directory: /home/dds/code/algorithm/src
+# Install script for directory: /home/dds/code/project/algorithm/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

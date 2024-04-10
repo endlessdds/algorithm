@@ -1,4 +1,5 @@
-src/CMakeFiles/main.dir/main.cpp.o: /home/dds/code/algorithm/src/main.cpp \
+src/CMakeFiles/test.dir/g_test.cpp.o: \
+ /home/dds/code/project/algorithm/src/g_test.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -271,7 +272,6 @@ src/CMakeFiles/main.dir/main.cpp.o: /home/dds/code/algorithm/src/main.cpp \
  /usr/local/include/gtest/gtest-typed-test.h \
  /usr/local/include/gtest/gtest_pred_impl.h \
  /usr/local/include/gtest/gtest_prod.h \
- /home/dds/code/algorithm/src/../include/segtree.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/stdc++.h \
  /usr/include/c++/11/cfloat /usr/include/c++/11/ciso646 \
  /usr/include/c++/11/climits \
@@ -360,4 +360,6 @@ src/CMakeFiles/main.dir/main.cpp.o: /home/dds/code/algorithm/src/main.cpp \
  /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
  /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/bits/fs_dir.h \
  /usr/include/c++/11/bits/fs_ops.h /usr/include/c++/11/memory_resource \
- /usr/include/c++/11/bits/uses_allocator_args.h
+ /usr/include/c++/11/bits/uses_allocator_args.h \
+ /home/dds/code/project/algorithm/src/../include/segtree.h \
+ /home/dds/code/project/algorithm/src/../include/odt.h

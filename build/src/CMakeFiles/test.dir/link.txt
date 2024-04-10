@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/test.dir/g_test.cpp.o -o ../../bin/test  /usr/local/lib/libgtest.a 

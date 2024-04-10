@@ -1,5 +1,5 @@
-/home/dds/code/algorithm/build/CMakeFiles/edit_cache.dir
-/home/dds/code/algorithm/build/CMakeFiles/rebuild_cache.dir
-/home/dds/code/algorithm/build/src/CMakeFiles/main.dir
-/home/dds/code/algorithm/build/src/CMakeFiles/edit_cache.dir
-/home/dds/code/algorithm/build/src/CMakeFiles/rebuild_cache.dir
+/home/dds/code/project/algorithm/build/CMakeFiles/edit_cache.dir
+/home/dds/code/project/algorithm/build/CMakeFiles/rebuild_cache.dir
+/home/dds/code/project/algorithm/build/src/CMakeFiles/test.dir
+/home/dds/code/project/algorithm/build/src/CMakeFiles/edit_cache.dir
+/home/dds/code/project/algorithm/build/src/CMakeFiles/rebuild_cache.dir
