@@ -8,8 +8,7 @@
 #define SUM 1
 #define MAX 2
 
-template <std::size_t OPERATION>
-class segtree {
+template <std::size_t OPERATION> class segtree {
 public:
   using ll = long long;
 
@@ -22,7 +21,8 @@ public:
   void add(int l, int r, ll val) { add2(1, 0, n_ - 1, l, r, val); }
 
   ll query(int l, int r) {
-    return lz_.size() == 0 ? query1(1, 0, n_ - 1, l, r) : query2(1, 0, n_ - 1, l, r);
+    return lz_.size() == 0 ? query1(1, 0, n_ - 1, l, r)
+                           : query2(1, 0, n_ - 1, l, r);
   }
 
 private:
@@ -120,7 +120,7 @@ private:
     if (L <= l && r <= R) {
       return v_[o];
     }
-    
+
     int mid = (l + r) >> 1;
     if (lz_[o] != 0) {
       if constexpr (OPERATION == SUM) {
@@ -134,7 +134,7 @@ private:
       lz_[2 * o + 1] += lz_[o];
       lz_[o] = 0;
     }
-    
+
     if constexpr (OPERATION == SUM) {
       ll sum = 0;
       if (L <= mid) {

@@ -1,13 +1,13 @@
-#include <algorithm>
-#include <gtest/gtest.h>
-#include <bits/stdc++.h>
-#include <numeric>
-#include "../include/segtree.h"
 #include "../include/odt.h"
+#include "../include/segtree.h"
+#include <algorithm>
+#include <bits/stdc++.h>
+#include <gtest/gtest.h>
+#include <numeric>
 
 using ll = long long;
 
-TEST (segtree_test_sum, single) {
+TEST(segtree_test_sum, single) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
   segtree<SUM> t(k);
@@ -25,11 +25,12 @@ TEST (segtree_test_sum, single) {
     if (l > r) {
       std::swap(l, r);
     }
-    EXPECT_EQ(t.query(l, r), std::accumulate(tree.begin() + l, tree.begin() + r + 1, 0LL));
+    EXPECT_EQ(t.query(l, r),
+              std::accumulate(tree.begin() + l, tree.begin() + r + 1, 0LL));
   }
 }
 
-TEST (segtree_test_sum, multi) {
+TEST(segtree_test_sum, multi) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
   segtree<SUM> t(k);
@@ -54,11 +55,12 @@ TEST (segtree_test_sum, multi) {
     if (l > r) {
       std::swap(l, r);
     }
-    EXPECT_EQ(t.query(l, r), std::accumulate(tree.begin() + l, tree.begin() + r + 1, 0LL));
+    EXPECT_EQ(t.query(l, r),
+              std::accumulate(tree.begin() + l, tree.begin() + r + 1, 0LL));
   }
 }
 
-TEST (segtree_test_max, single) {
+TEST(segtree_test_max, single) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
   segtree<MAX> t(k);
@@ -76,11 +78,12 @@ TEST (segtree_test_max, single) {
     if (l > r) {
       std::swap(l, r);
     }
-    EXPECT_EQ(t.query(l, r), *std::max_element(tree.begin() + l, tree.begin() + r + 1));
+    EXPECT_EQ(t.query(l, r),
+              *std::max_element(tree.begin() + l, tree.begin() + r + 1));
   }
 }
 
-TEST (segtree_test_max, multi) {
+TEST(segtree_test_max, multi) {
   int k = 10000;
   std::vector<ll> tree(k, 0);
   segtree<MAX> t(k);
@@ -105,7 +108,8 @@ TEST (segtree_test_max, multi) {
     if (l > r) {
       std::swap(l, r);
     }
-    EXPECT_EQ(t.query(l, r), *std::max_element(tree.begin() + l, tree.begin() + r + 1));
+    EXPECT_EQ(t.query(l, r),
+              *std::max_element(tree.begin() + l, tree.begin() + r + 1));
   }
 }
 
@@ -135,12 +139,13 @@ TEST(odt_test, odt) {
     if (l > r) {
       std::swap(l, r);
     }
-    EXPECT_EQ(t.sum(l, r), std::accumulate(v.begin() + l, v.begin() + r + 1, 0LL));
+    EXPECT_EQ(t.sum(l, r),
+              std::accumulate(v.begin() + l, v.begin() + r + 1, 0LL));
     EXPECT_EQ(t.max(l, r), *std::max_element(v.begin() + l, v.begin() + r + 1));
   }
 }
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
   testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
 }
